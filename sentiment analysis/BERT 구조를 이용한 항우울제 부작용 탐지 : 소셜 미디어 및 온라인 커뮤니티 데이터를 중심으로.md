@@ -23,10 +23,12 @@
 <img width="400" alt="스크린샷 2024-01-17 오후 3 12 57" src="https://github.com/K-Saaan/papers/assets/111870436/a2452921-25d9-40a3-af46-4c7650cb4b8e">
 
 본 연구는 부작용 표현과 MedDRA의 표준화된 용어에 대한 정적인 임베딩을 생성하고 이에 대한 유사도를 계산하기 위해 SBERT(문장 단위의 임베딩을 얻기 위해 샴 네트워크 구조를 사용하여 문장 유사도 관련 데이터셋에서 파인튜닝한 모델)를 활용한다.
+
 <img width="400" alt="스크린샷 2024-01-17 오후 3 16 10" src="https://github.com/K-Saaan/papers/assets/111870436/dec3366f-a5a5-4041-bdac-0290b024021d">
 
 약물에 관한 사전학습이 잘 이루어진 BERT 모델이 없다고 판단하여 Intermediate 학습 단계를 추가했다. Intermediate는 사전학습과 파인튜닝 사이에 도메인이나 목표 작업과 가까운 데이터를 학습시키는 단계다. 
-<img width="322" alt="스크린샷 2024-01-17 오후 3 20 19" src="https://github.com/K-Saaan/papers/assets/111870436/1e277b6b-c382-47d3-995c-260aa727bf1e">
+
+<img width="400" alt="스크린샷 2024-01-17 오후 3 20 19" src="https://github.com/K-Saaan/papers/assets/111870436/1e277b6b-c382-47d3-995c-260aa727bf1e">
 
 Model
 - BERT
@@ -46,9 +48,9 @@ Model
 <img width="479" alt="스크린샷 2024-01-11 오후 4 01 38" src="https://github.com/kimdaehyuun/Quanters/assets/111870436/02a02085-ac8e-46b2-a05e-35dd3c5bf079">
 <img width="474" alt="스크린샷 2024-01-11 오후 4 01 49" src="https://github.com/kimdaehyuun/Quanters/assets/111870436/10eade94-48ed-4f97-a6f1-7e7a1e9fd27e">
 
-<img width="483" alt="스크린샷 2024-01-11 오후 4 02 26" src="https://github.com/kimdaehyuun/Quanters/assets/111870436/a7ed031e-f3a3-4a13-a2e0-b8825f31a5f1">
+<img width="420" alt="스크린샷 2024-01-11 오후 4 02 26" src="https://github.com/kimdaehyuun/Quanters/assets/111870436/a7ed031e-f3a3-4a13-a2e0-b8825f31a5f1">
 
-<img width="433" alt="스크린샷 2024-01-11 오후 4 03 44" src="https://github.com/kimdaehyuun/Quanters/assets/111870436/a09c5ce0-fbcc-43f9-b39f-96acf56f34ba">
+<img width="420" alt="스크린샷 2024-01-11 오후 4 03 44" src="https://github.com/kimdaehyuun/Quanters/assets/111870436/a09c5ce0-fbcc-43f9-b39f-96acf56f34ba">
 
 
 ### Experiment
@@ -56,10 +58,12 @@ Model
 트위터와 레딧에서 25종의 항우울제 이름으로 검색 키워드를 설정하여 수집.
 
 트위터에서 2006년 3월 21일 ~ 2022년 11월 1일 트윗 수집
+
 <img width="519" alt="스크린샷 2024-01-11 오후 3 53 04" src="https://github.com/kimdaehyuun/Quanters/assets/111870436/0c1aef13-5024-4eb8-9ba8-a865b5577961">
 
 레딧 : 7개의 subreddits (“antidepressants”, “depression”,
 “depressionregimens”, “science”, “Nootropics”, “AskReddit”, “DrugNerds”) 에서 데이터를 수집
+
 <img width="525" alt="스크린샷 2024-01-11 오후 3 54 33" src="https://github.com/kimdaehyuun/Quanters/assets/111870436/0578ca57-5469-4674-9e05-a5091a046e7b">
 
 <img width="476" alt="스크린샷 2024-01-11 오후 3 56 00" src="https://github.com/kimdaehyuun/Quanters/assets/111870436/e2b010dd-1faa-4aeb-88a8-1a3a033e0883">
