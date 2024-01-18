@@ -1,4 +1,4 @@
-## Analysis and Recognition of Depressive Emotion through NLP and Machine Learning
+## [Analysis and Recognition of Depressive Emotion through NLP and Machine Learning](https://scienceon.kisti.re.kr/commons/util/originalView.do?cn=JAKO202015762902196&dbt=JAKO&koi=KISTI1.1003%2FJNL.JAKO202015762902196)
 
 ### Problem
 현대 사회가 복잠해짐에 따라 우울증이 문제로 대두되고 있다. SNS상 우울증이 의심되는 사용자를 조기에 발견하고, 상담 및 치료현장으로 이끌어 우울증을 예방하고 자살 징후에 대비하기 위함.

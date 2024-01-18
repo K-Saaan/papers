@@ -1,4 +1,4 @@
-## Forecasting the onset and course of mental illness with Twitter data
+## [Forecasting the onset and course of mental illness with Twitter data](https://www.nature.com/articles/s41598-017-12961-9)
 
 ### Problem
 SNS를 통해 우울증, PTSD, 자살 생각과 같은 상태를 진단하는 연구가 있지만 아직 초기 단계에 있어 개선이 필요하다. 본 연구에서는 트위터에서 우울증과 PTSD를 예측하고 추적하기 위한 개선된 방법을 제시한다.
