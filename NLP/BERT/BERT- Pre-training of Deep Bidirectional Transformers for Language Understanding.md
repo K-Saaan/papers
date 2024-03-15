@@ -191,7 +191,7 @@ BERT는 각 task에 따라 task specific 입출력을 받아서 각 task에 맞�
 
 [Table 6]
 
-모델의 크기가 클수록 성은이 좋은 것을 확인할 수 있다.
+모델의 크기가 클수록 성능이 좋은 것을 확인할 수 있다.
 
 #### 5.3. Feature-based Approach with BERT
 BERT를 기존의 방법대로 fine-tuning approach 했을 때와 ELMo 같은 feature-based approach로 사용했을 때
