@@ -186,6 +186,7 @@ BERT는 각 task에 따라 task specific 입출력을 받아서 각 task에 맞�
 
 #### 5.2. Effect of Model Size
 모델의 크기가 fine-tuning 성능에 어떤 영향을 주는가?
+
 <img width="365" alt="스크린샷 2024-03-15 오후 2 09 36" src="https://github.com/K-Saaan/papers/assets/111870436/aca04aa7-5f9a-43a2-a034-cf5783400bd4">
 
 [Table 6]
