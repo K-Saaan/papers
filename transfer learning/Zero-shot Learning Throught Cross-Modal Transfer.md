@@ -58,15 +58,15 @@ distributional approach는 단어들 간 의미적 유사성을 확인할 때 �
 
 이미지와 단어 간 매핑 훈련을 위해 위 식을 최소화해야 한다.
 
-$$Y_s : seen\, class$$
+$$Y_s : seen\ class$$
 
-$$ Y_u : unseen\, class $$
+$$ Y_u : unseen\ class $$
 
-$$ W_y : class\, name에\, 대응되는\, word\, vector $$
+$$ W_y : class\ name에\ 대응되는\ word\ vector $$
 
-$$ x^(i) : training\.image $$
+$$ x^(i) : training\ image $$
 
-$$ \theta : neural\.network\. 가중치 $$
+$$ \theta : neural\ network\ 가중치 $$
 
 <img width="739" alt="스크린샷 2024-03-25 오후 12 28 04" src="https://github.com/K-Saaan/papers/assets/111870436/2d88139d-bb6a-4004-96cc-86d76e4e83a2">
 
@@ -82,19 +82,19 @@ $$ \theta : neural\.network\. 가중치 $$
 
 $$ y \in y_s \cup y_u : seen and unseen \ 클래스에 \ 대한 \ y값 $$
 
-$$ x \in X_t : test \, set \, 이미지 $$
+$$ x \in X_t : test \ set \ 이미지 $$
 
-$$ f \in F_t : test \, set semantic \, vectors $$
+$$ f \in F_t : test \ set semantic \ vectors $$
 
-$$ X_s : seen \, 클래스에 \, 대한 \, 모든 \, training \, set \, 이미지의 \, feature \, vectors $$
+$$ X_s : seen \ 클래스에 \ 대한 \ 모든 \ training \ set \ 이미지의 \ feature \ vectors $$
 
-$$ F_s : 각 \, X_s에 \, 대응하는 \, semantic \, vectors $$
+$$ F_s : 각 \ X_s에 \ 대응하는 \ semantic \ vectors $$
 
-$$ F_y : y의 \, 클래스에 \, 대한 \, semantic \, vectors $$
+$$ F_y : y의 \ 클래스에 \ 대한 \ semantic \ vectors $$
 
-$$ V \in {s, u} : seen \, and \, unseen \, 클래스에 \, 대한 \, visibility \, 변수 $$
+$$ V \in {s, u} : seen \ and \ unseen \ 클래스에 \ 대한 \ visibility \ 변수 $$
 
-$$ \theta : image \, feature \, vector를 \, d차원 \, semantic \, word \, space에 \, 매핑하기 \, 위한 \, neural \, network \, 파라미터 $$
+$$ \theta : image \ feature \ vector를 \ d차원 \ semantic \ word \ space에 \ 매핑하기 \ 위한 \ neural \ network \ 파라미터 $$
 
 - 이상치 탐지 점수를 임계값으로 지정하여 사용
 
