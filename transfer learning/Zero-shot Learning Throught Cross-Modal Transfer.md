@@ -80,7 +80,7 @@ $$ \theta : neural\.network\. 가중치 $$
 
 [식 (2)]
 
-$$ y \in y_s \cup y_u : seen and unseen \, 클래스에 \, 대한 \, y값 $$
+$$ y \in y_s \cup y_u : seen and unseen \ 클래스에 \ 대한 \ y값 $$
 
 $$ x \in X_t : test \, set \, 이미지 $$
 
