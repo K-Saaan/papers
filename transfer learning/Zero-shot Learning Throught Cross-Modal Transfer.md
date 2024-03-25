@@ -74,7 +74,7 @@ $$ \theta : neural\ network\ 가중치 $$
 각 class별로 대응되는 word vector끼리 군집을 이루고 있다. unseen class인 cat, truck는 군집과 떨어져 있지만 truck은 automobile과 cat은 dog와 가까이 위치해 있다. 이는 목적함수와 학습방식으로 의미적으로 유사한 class와 가깝게 위치하고 있다. 이런 방식으로 unseen class의 outlier detection할 수 있고 이를 zero-shot word vectorㅎ라고 분류할 수 있다.
 
 ### 5. Zero-Shot Learning Model
-본 연구의 모델은 test set의 이미지 x에 대한 조건부 확률 p(y|x)를 예측하는 것이다. 일반적인 분류기는 training example에 없던 class를 예측할 수 없기 때문에 binary visibility random variable(V)을 사용해 어떤 이미지가 seen, unseen인지 예측한다.
+본 연구의 모델은 test set의 이미지 x에 대한 조건부 확률 p(y|x)를 예측하는 것이다. 일반적인 분류기는 training example에 없던 class를 예측할 수 없기 때문에 binary visibility random variable(V)을 사용해 어떤 이미지가 seen, unseen인지 예측한다. 
 
 <img width="583" alt="스크린샷 2024-03-25 오후 1 53 02" src="https://github.com/K-Saaan/papers/assets/111870436/8663337e-269b-4b4a-b028-98f4fb1ac2fa">
 
