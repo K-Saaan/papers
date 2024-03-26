@@ -1,4 +1,4 @@
-## [A  Deep  Learning-based  Depression  Trend  Analysis  of Korean  on  Social  Media](https://arxiv.org/abs/1810.04805?source=post_page)
+## [BERT- Pre-training of Deep Bidirectional Transformers for Language Understanding.md](https://arxiv.org/abs/1810.04805?source=post_page)
 
 ### Abstract
 새로운 언어 모델 BERT(Bidirectional Encoder Representations from Transformers)에 대한 소개. 
@@ -39,7 +39,7 @@ bidirectional language model을 통해 얻은 representation을 embedding vector
 <ELMo는 순방향 역방향 언어 모델을 모두 사용하지만 각각의 출력값을 concat해서 사용하기 때문에 양방향이 아닌 단방향 모델로 본다. 이것이 BERT에서 강조하는 deep bidirectional과의 차이점이다.>
 
 본 논문에서 기존의 pre-trained representation 방법이 성능을 제한한다. 특히 fine-tuning 방식이 그렇다.
-GPT의 경우 left-to-right 단방향 모델로 모든 토근이 이전 토큰과의 attention만 계산해 문장 레벨 task에서는 차선책이 된다. QA와 같은 토큰 단위의 task에서는 context의 양방향을 포함하는 것이 중요한데 단방향 fine-tuning 방식은 성능이 떨어진다.
+GPT의 경우 left-to-right 단방향 모델로 모든 토큰이 이전 토큰과의 attention만 계산해 문장 레벨 task에서는 차선책이 된다. QA와 같은 토큰 단위의 task에서는 context의 양방향을 포함하는 것이 중요한데 단방향 fine-tuning 방식은 성능이 떨어진다.
 <최선책은 양쪽 토큰 모두의 attention을 계산하는 것이다.>
 
 본 논문에 나오는 BERT는 앞서 언급한 비양방향 제약을 MLM(masked language model)을 pre-training 목적으로 사용하여 완화시켰다.
@@ -80,9 +80,11 @@ pre-training task의 unlabeled data를 활용해 초기 파라미터를 설정�
 
 pre-training
 - 레이블링 하지 않은 데이터를 기반으로 학습
+
 fine-tuning 
 - 모델을 pre-training된 parameter로 초기화
-- 모델을 레이블링된 데이터포 fine-tuning
+- 모델을 레이블링된 데이터로 fine-tuning
+
 실제 task에서 사용하는 모델은 초기에 동일한 parameter로 시작하지만 최종적으로 서로 다른 fine-tuning된 모델을 보유한다.
 둘 사이의 구조적 차이는 거의 없다.
 
@@ -98,7 +100,9 @@ $$\large BERT_{BASE} (L=12, H=768, A=12, Total Parameters=110M) $$
 $$\large BERT_{LARGE} (L=24, H=1024, A=16, Total Parameters=340M) $$
 
 BASE의 경우 OpenAI GPT와의 비교를 위해 동일한 parameter를 사용했다. GPT는 토큰의 왼쪽 문맥만을 참조하지만 BERT는 양쪽 모두 참조할 수 있다.
+
 - GPT는 다음 토큰을 맞추는 model을 만들기 위해 transformer와 decoder를 사용했고, BERT는 MLM(masked language model)과 NSP(next sentence prediction)를 위해 self-attention을 수행하는 encoder만 사용했다.
+
 ※ self-attention : bidirectional한 학습을 위한 것으로 한 단어와 다른 단어의 관계 정보를 처리하는 것.
 
 BERT를 다룰 때 다양한 downstream task에서 잘 적용하기 위해 입력 표현이 애매하지 않게 하기 위해 하나 또는 한쌍의 sentence(문장 또는 인접한 텍스트들의 임의의 범위)를 하나의 토큰 시퀀스로 분명하게 표현해야한다.
@@ -119,6 +123,7 @@ MLM은 input token의 일정 비율(15%)을 랜덤하게 마스킹하고 마스�
 - 15%의 80%는 [MASK]토큰으로 바꾼다.                       ex) My name is BERT -> My name is [MASK]
 - 10%는 랜덤 토큰(단어)로 바꾼다.                           ex) My name is BERT -> My name is man
 - 10%는 바꾸지 않는다.(실제 관측 단어에 대한 표현을 bias하기 위함) ex) My name is BERT -> My name is BERT
+
 이후 cross entropy loss를 사용해 원래의 토큰을 예측한다.
 
 ##### T2. Next Sentence Prediction(NSP)
