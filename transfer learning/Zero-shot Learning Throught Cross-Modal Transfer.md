@@ -58,15 +58,15 @@ distributional approach는 단어들 간 의미적 유사성을 확인할 때 �
 
 이미지와 단어 간 매핑 훈련을 위해 위 식을 최소화해야 한다.
 
-$$Y_s : seen\ class$$
+$$ Y_s : seen class $$
 
-$$ Y_u : unseen\ class $$
+$$ Y_u : unseen class $$
 
-$$ W_y : class\ name에\ 대응되는\ word\ vector $$
+$$ W_y : class name에 대응되는 word vector $$
 
-$$ x^(i) : training\ image $$
+$$ x^(i) : training image $$
 
-$$ \theta : neural\ network\ 가중치 $$
+$$ \theta : neural network 가중치 $$
 
 <img width="739" alt="스크린샷 2024-03-25 오후 12 28 04" src="https://github.com/K-Saaan/papers/assets/111870436/2d88139d-bb6a-4004-96cc-86d76e4e83a2">
 
