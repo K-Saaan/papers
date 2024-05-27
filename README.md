@@ -17,6 +17,7 @@
 
 ### LLM
 - The Era of 1-bit LLMs- All Large Language Models are in 1.58 Bits
+- LLM in a flash- Efficient Large Language Model Inference with Limited Memory
 
 ### Transfer learning
 - Zero-shot Learning Throught Cross-Modal Transfer
