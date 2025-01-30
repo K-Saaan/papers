@@ -18,6 +18,8 @@
 ### LLM
 - The Era of 1-bit LLMs- All Large Language Models are in 1.58 Bits
 - LLM in a flash- Efficient Large Language Model Inference with Limited Memory
+- Chain-of-Thought Prompting Elictis Resoning in Large Language Models
+- OpenELM- An Efficient Language Model Family
 
 ### Transfer learning
 - Zero-shot Learning Throught Cross-Modal Transfer
